@@ -1,0 +1,4 @@
+.DS\_Store
+*.sw?
+node_modules
+naught*
