@@ -6,6 +6,7 @@ A personal resume website built on the MEAN stack. Perfect for anyone who is jus
 - Download PDF Resume
 - Browser Tab Icon
 - Fix Karma Unit Test
+- Explain Grunt Usage
 
 # Overview
 This project accomplishes three main goals:
