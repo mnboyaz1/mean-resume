@@ -1,13 +1,28 @@
 <html>
 <head>
   <title>MEAN Resume</title>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <script src="/javascripts/docReady.js"></script>
   <script src="/javascripts/mean-resume.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+  <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/mean-resume.css">
   <style>.glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
 <body ng-app="mean-resume">
+<a class="fork" href="https://github.com/NoelBaron/mean-resume#fork-destination-box"><img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<div class="background"></div>
+<div id="header">
+  <div class="constraint">
+    <a href="/"><i class="fa fa-home"></i> Home</a><a 
+    href="/samples"><i class="fa fa-code"></i> Code Samples</a>
+  </div>
+</div>
+<div class="constraint">
   <ui-view></ui-view>
+</div>
 </body>
 </html>

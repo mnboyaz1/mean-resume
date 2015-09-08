@@ -1,6 +1,9 @@
+/*
+TBD: Redo thsi test. Outdated.
+*/
 describe('Home Controller', function () {
   var 
-    testUser = { id: '55ed98bb22adbfbf11db4bbf', first:'Noel', last:'Baron' },
+    testUser = { _id: 1, first:'Noel', last:'Baron' },
     User,
     Controller, 
     scope, 
@@ -11,7 +14,7 @@ describe('Home Controller', function () {
   beforeEach(module('ui.router'))
   beforeEach(module('mean-resume'));
   beforeEach(module(function ($provide) {
-    $provide.value('activeUserId',testUser.id);
+    $provide.value('activeUserId',testUser._id);
   }));
   beforeEach(inject(function($rootScope,$controller,_User_,_$httpBackend_, _$q_){
     User = _User_;
@@ -27,7 +30,6 @@ describe('Home Controller', function () {
     $httpBackend.expectGET(/\/users\/.*/);
     var controller = createController();
     $httpBackend.flush();
-    console.log(scope.user.current);
     expect(scope.user).to.be.an.instanceOf(User)
     expect(scope.user.fullName()).to.equal('Noel Baron');
   }));

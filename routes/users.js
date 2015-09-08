@@ -11,8 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.param('userId',function(req,res,next,id) {
-  var q = User.findById(req.params.userId);
-  q.exec(function(err, user){
+  var q = User.findOne({id:req.params.userId},function(err,user) {
     if (err) { return next(err); }
     if (!user) { return next(new Error('can\'t find user')); }
     req.user = user;

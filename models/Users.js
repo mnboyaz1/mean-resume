@@ -3,7 +3,8 @@ var validateEmail = function(email) {
     return re.test(email)
 };
 var mongoose = require('mongoose');
-var UserSchema = new mongoose.Schema({
+var ai = require('mongoose-auto-increment');
+var Schema = new mongoose.Schema({
   first: String,
   last: String,
   email: {
@@ -13,7 +14,11 @@ var UserSchema = new mongoose.Schema({
     required: 'Email address is required',
     validate: [validateEmail, 'Please fill a valid email address'],
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
-  }
+  },
+  title:String,
+  phone:String,
+  summary:String
   //comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 });
-mongoose.model('User', UserSchema);
+Schema.plugin(ai.plugin,{ model: 'User', field: 'id', startAt:1 })
+mongoose.model('User', Schema);

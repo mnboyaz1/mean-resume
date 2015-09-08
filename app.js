@@ -6,8 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // Models
 var mongoose = require('mongoose');
+var autoIncrement = require('mongoose-auto-increment');
+var db = mongoose.connect('mongodb://localhost/mean-resume');
+autoIncrement.initialize(db);
 require('./models/Users');
-mongoose.connect('mongodb://localhost/meanResume');
+require('./models/Links');
+require('./models/SkillGroups');
+require('./models/Skills');
+require('./models/Samples');
 
 // view engine setup
 var app = express();
@@ -23,7 +29,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/users', require('./routes/users'));
+app.use('/api/users', require('./routes/users'));
+app.use('/api/links', require('./routes/links'));
+app.use('/api/skills', require('./routes/skills'));
+app.use('/api/skillgroups', require('./routes/skillgroups'));
+app.use('/api/samples', require('./routes/samples'));
 app.use('/', require('./routes/index'));
 
 // catch 404 and forward to error handler
