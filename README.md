@@ -1,6 +1,12 @@
 # mean-resume
 A personal resume website built on the MEAN stack. Perfect for anyone who is just getting started with MEAN, automated testing, database migrations, and source builds.
 
+### TBD
+- Meta Share Tags
+- Download PDF Resume
+- Browser Tab Icon
+- Fix Karma Unit Test
+
 # Overview
 This project accomplishes three main goals:
 - Give technically savvy people a quick way to launch a professional resume website.
