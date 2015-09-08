@@ -5,9 +5,9 @@ module.exports.up = function (done) {
     id:1,
     first:'Noel',
     last:'Baron',
-    email:'noel@crocagile.com',
+    email:'noel@goodfellaz.com',
     title:'Senior Architect, Full Stack Developer',
-    phone:'(908)-377-5046',
+    phone:'(908) 377-5046',
     summary:[
       'Senior architect & team leader with',
       'emphasis on Javascript and PHP stacks.',
