@@ -83,6 +83,11 @@ Each of these files contains seed data for your MongoDB database. They're named 
 - 4-add-skills.js : This data represents your individual skills which appear in each skill group section.
 - 5-add-samples.js : This file is where you can place your sample code. Place your code in the comment blocks.
 
+##### Alternate Mongo Setup
+If you experienced issues installing mongo with Linuxbrew, try [this tutorial](https://mongodb-documentation.readthedocs.org/en/latest/ecosystem/tutorial/install-mongodb-on-amazon-ec2.html) (skip to the part where it asks you to install a new repository). 
+
+Once mongo is up and running independently of brew, you can replace `package.json` with `package.alt.json`. This version of package.json removes mongo commands from the scripts.
+
 # Launch Server
 To run your migrations and launch the new server: `npm start`
 
