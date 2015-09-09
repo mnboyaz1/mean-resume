@@ -15,7 +15,6 @@ function parseGroups(key,list,res) {
     return;
   }
   Skill.find({skillgroups_id:list[key]._id},{_id:0,title:1},function(err,data) {
-    console.log(data); 
     list[key].skills = data;
     parseGroups(key+1,list,res);
   })
