@@ -1,5 +1,15 @@
 # mean-resume
-A personal resume website built on the MEAN stack. Perfect for anyone who is just getting started with MEAN, automated testing, database migrations, and source builds.
+A responsive personal resume website built on the MEAN stack with LESS. Perfect for anyone who is just getting started with MEAN, automated testing, database migrations, and source builds.
+
+# Demo
+[NoelBaron.com](http://www.noelbaron.com) 
+
+### TBD
+- Meta Share Tags
+- Download PDF Resume
+- Browser Tab Icon
+- Fix Karma Unit Test
+- Explain Grunt Usage
 
 # Overview
 This project accomplishes three main goals:
