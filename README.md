@@ -82,8 +82,8 @@ Only update this file if you have experience with Grunt. It serves three purpose
 - Converts and minifies all /src/less/*.less files into CSS and puts them in /build/css
 - Migrates new build to /public/stylesheets and /public/javascripts
 
-##### Profile and Background Images
-You may replace desktop.jpg and profile.jpg with your own imagery. For best results, use the same dimensions as the original files, otherwise you'll have to modify HTML and LESS properties. 
+##### PDF Resume, Profile Pic, and Background Image
+You may replace resume.pdf, desktop.jpg, and profile.jpg with your own imagery. For best results, use the same dimensions as the original files, otherwise you'll have to modify HTML and LESS properties. Don't forget to replace the resume pdf or you'll be sharing my resume with potential employers!
 
 ##### Migrations/*.js
 Each of these files contains seed data for your MongoDB database. They're named according to model/table, so you should have no problem swapping out my data for yours.
