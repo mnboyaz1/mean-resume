@@ -4,9 +4,9 @@
   "private": false,
   "scripts": {
     "start": "export NODE_ENV=development && naught start --worker-count 1 --ipc-file ~/naught/meanResume.ipc --log ~/naught/meanResume.log --stdout ~/naught/meanResume.stdout.log --stderr ~/naught/meanResume.stderr.log ./bin/www",
-    "stop": "naught stop ~/naught/meanResume.ipc",
+    "stop": "brew services stop mongodb && naught stop ~/naught/meanResume.ipc",
     "status": "naught status ~/naught/meanResume.ipc",
-    "prestart":"./node_modules/mongodb-migrations/bin/mm migrate --config=config/mm.json"
+    "prestart":"brew services start mongodb && ./node_modules/mongodb-migrations/bin/mm migrate --config=config/mm.json"
   },
   "dependencies": {
     "angular": "*",

@@ -17,6 +17,6 @@ function parseGroups(key,list,res) {
   Skill.find({skillgroups_id:list[key]._id},{_id:0,title:1},function(err,data) {
     list[key].skills = data;
     parseGroups(key+1,list,res);
-  })
+  }).sort({title: 'asc'});
 }
 module.exports = router;

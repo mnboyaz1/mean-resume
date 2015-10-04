@@ -1,6 +1,6 @@
 {
   "host":"localhost",
-  "db":"mean-resume",
+  "db":"mike-resume",
   "collection":"migrate",
   "directory":"migrations"
 }

@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 // Models
 var mongoose = require('mongoose');
 var autoIncrement = require('mongoose-auto-increment');
-var db = mongoose.connect('mongodb://localhost/mean-resume');
+var db = mongoose.connect('mongodb://localhost/mike-resume');
 autoIncrement.initialize(db);
 require('./models/Users');
 require('./models/Links');

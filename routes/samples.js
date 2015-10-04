@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Sample = mongoose.model('Sample');
 
 router.get('/', function(req, res, next) {
-  Sample.find(function(err, data){
+  Sample.find({}).sort({_id: 'asc'}).exec(function(err, data){
     if(err){ return next(err); }
     res.json(data);
   });

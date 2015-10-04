@@ -3,17 +3,17 @@ module.exports.id = "add-users";
 module.exports.up = function (done) {
   var user = {
     id:1,
-    first:'Noel',
-    last:'Baron',
-    email:'noel@goodfellaz.com',
-    title:'Senior Architect, Full Stack Developer',
-    phone:'(908) 377-5046',
+    first:'Michael',
+    last:'Eccles',
+    email:'mnboyaz@msn.com',
+    title:'Program and Web Developer',
+    phone:'(520) 870-1152',
     summary:[
-      'Senior architect & team leader with',
-      'emphasis on Javascript and PHP stacks.',
-      'I have personally built many large-scale applications',
-      'and am a veteran of B2B and B2C SDLC with 15+',
-      'years of hands-on experience.'
+      'Mid level Developer, ready to move to next the level, ',
+      'emphasis on Javascript and PHP stacks. ',
+      'I have the knowledge, background and ability ',
+      'to fit in and contribute to the team. ',
+      'Success is the Goal I strive for.'
     ].join(' ')
   }
   var db = this.db.collection('users');
