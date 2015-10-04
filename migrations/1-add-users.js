@@ -6,14 +6,10 @@ module.exports.up = function (done) {
     first:'Michael',
     last:'Eccles',
     email:'mnboyaz@msn.com',
-    title:'Program and Web Developer',
+    title:'Web Developer',
     phone:'(520) 870-1152',
     summary:[
-      'Mid level Developer, ready to move to next the level, ',
-      'emphasis on Javascript and PHP stacks. ',
-      'I have the knowledge, background and ability ',
-      'to fit in and contribute to the team. ',
-      'Success is the Goal I strive for.'
+      'Web developer & QA engineer with emphasis on Javascript and PHP stacks. Currently seeking an interesting technology company who embraces new and energetic developers ready to fit into any team. I am open to a variety of roles, including QA testing and web development.',
     ].join(' ')
   }
   var db = this.db.collection('users');
