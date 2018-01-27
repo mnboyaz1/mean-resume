@@ -44,7 +44,8 @@ module.exports.up = function (done) {
     {skillgroups_id:2,title:'Command Line'},
     {skillgroups_id:2,title:'MySQL Work Bench'},
     {skillgroups_id:2,title:'Monitoring'},
-    {skillgroups_id:2,title:'Github Services'}
+    {skillgroups_id:2,title:'Github Services'},
+    {skillgroups_id:2,title:'VPN Services'}
 
   ]
   var id = 0;
